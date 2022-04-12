@@ -1,0 +1,38 @@
+footer {
+    padding: 0 43px;
+
+    @media (max-width: 928px) {
+        padding: 0 43px 30px 43px;
+    }
+
+    .divisor {
+        min-width: 100%;
+        min-height: 1px;
+        background-color: $gray;
+    }
+
+    .footer-content {
+        font-family: $font-roboto;
+        font-size: 0.9rem;
+        line-height: 150%;
+        color: $gray-text;
+        padding: 10px 15px 0 15px;
+        @include flexbox(flex, space-between, stretch);
+        gap: 35px;
+
+        p {
+            padding-top: 25px;
+        }
+
+        @media (max-width: 928px) {
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 0;
+
+            p {
+                margin-top: -40px;
+            }
+        }
+    }
+}

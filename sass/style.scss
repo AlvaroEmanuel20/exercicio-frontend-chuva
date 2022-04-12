@@ -1,0 +1,99 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+//STRUCTURE
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+//MIXINS
+@mixin flexbox($display, $justify, $align) {
+    -webkit-display: $display;
+    display: $display;
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    justify-content: $justify;
+    -webkit-align-items: $align;
+    align-items: $align;
+}
+
+@mixin linear-gradient-orange {
+    background: -webkit-linear-gradient(180deg, $orange-light 0%, $orange 100%);
+    background: -moz-linear-gradient(180deg, $orange-light 0%, $orange 100%);
+    background: -o-linear-gradient(180deg, $orange-light 0%, $orange 100%);
+    background: linear-gradient(180deg, $orange-light 0%, $orange 100%);
+}
+
+@mixin font-adjust($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+//MAIN/SHARED COMPONENTS
+
+.container {
+    @include flexbox(flex, initial, initial);
+}
+
+.content {
+    min-width: 100%;
+    padding-left: 220px;
+
+    @media (max-width: 840px) {
+        padding-left: 0;
+    }
+}
+
+.box-header {
+    background-color: $hover-sidebar-bg;
+    border-bottom: 1px solid $gray-light;
+    padding: 11px 15px;
+
+    h3 {
+        @include font-adjust(1.25rem, $medium);
+    }
+}
+
+.box-body {
+    padding: 15px;
+    font-family: $font-quicksand;
+    color: $gray-text;
+}
+
+//RESPONSIVE OPTIONS
+.hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    @media (min-width: 840px) {
+        display: none;
+    }
+}
+
+//SIDEBAR
+@import "./sections/sidebar.scss";
+
+//HEADER
+@import "./sections/header.scss";
+
+//CONTENT
+@import "./sections/content.scss";
+
+//FOOTER
+@import "./sections/footer.scss";
