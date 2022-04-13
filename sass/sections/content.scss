@@ -32,14 +32,14 @@
                 margin-bottom: 25px;
             }
 
-            img {
+            iframe {
                 cursor: pointer;
             }
 
             @media (max-width: 1092px) {
                 max-width: 686px;
 
-                img {
+                iframe {
                     max-width: 686px;
                 }
             }
@@ -47,7 +47,7 @@
             @media (max-width: 965px) {
                 max-width: 556px;
 
-                img {
+                iframe {
                     max-width: 556px;
                 }
             }
@@ -55,7 +55,7 @@
             @media (max-width: 620px) {
                 max-width: 396px;
 
-                img {
+                iframe {
                     max-width: 396px;
                 }
             }
@@ -63,7 +63,7 @@
             @media (max-width: 466px) {
                 max-width: 356px;
 
-                img {
+                iframe {
                     max-width: 356px;
                 }
             }
@@ -71,7 +71,7 @@
             @media (max-width: 423px) {
                 max-width: 320px;
 
-                img {
+                iframe {
                     max-width: 320px;
                 }
             }
@@ -79,7 +79,7 @@
             @media (max-width: 356px) {
                 max-width: 280px;
 
-                img {
+                iframe {
                     max-width: 280px;
                 }
             }
