@@ -5,7 +5,7 @@ Esse é um exercício proposto pela empresa [Chuva](https://chuva.net.br/) para 
 
 Exercício incrível pois me deu a oportunidade de exercitar conceitos do SASS como `mixins`, `variables`, `nesting`... Também pude exercitar um pouco sobre responsividade e Javascript (DOM e OOP).
 
-![Print da home do projeto](images\readme-presentation-images\print-tela-exercicio.png)
+![Print da home do projeto](./images/readme-presentation-images/print-tela-exercicio.png)
 
 
 
@@ -31,12 +31,12 @@ E para aumentar a perfomance usei o comando de terminal `sass assets/scss/style.
 
 ## Menu responsivo
 
-![Funcionamento do menu responsivo](images\readme-presentation-images\responsividade-exercicio.png)
+![Funcionamento do menu responsivo](./images/readme-presentation-images/responsividade-exercicio.png)
 
 
 ## Funcionamento e responsividade
 
-![Responsividade](images\readme-presentation-images\Exercício-Frontend.gif)
+![Responsividade](./images/readme-presentation-images/Exerc%C3%ADcio-Frontend.gif)
 
 
 ## 🚀 Sobre
